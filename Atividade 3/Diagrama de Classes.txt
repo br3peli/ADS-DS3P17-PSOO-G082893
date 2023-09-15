@@ -1,0 +1,39 @@
+Classes:
+
+Banco: Representa uma instituição financeira.
+Atributos: nome, endereço.
+Métodos: abrirConta(), fecharConta(), listarContas().
+
+Cliente: Representa um cliente do banco.
+Atributos: nome, CPF, endereço.
+Métodos: depositar(), sacar(), transferir(), consultarSaldo().
+
+Conta: Representa uma conta bancária.
+Atributos: número da conta, saldo.
+Métodos: depositar(), sacar(), transferir(), consultarSaldo().
+
+
+Relações:
+
+Um Banco tem várias Contas (relação de agregação).
+Um Cliente tem uma Conta (relação de composição).
+
+
+Métodos:
+
+Banco:
+abrirConta(): Cria uma nova conta bancária para um cliente e a associa ao banco.
+fecharConta(): Encerra uma conta bancária e a remove do banco.
+listarContas(): Retorna a lista de todas as contas no banco.
+
+Cliente:
+depositar(): Permite ao cliente depositar dinheiro em sua conta.
+sacar(): Permite ao cliente sacar dinheiro de sua conta.
+transferir(): Permite ao cliente transferir dinheiro para outra conta.
+consultarSaldo(): Retorna o saldo atual da conta do cliente.
+
+Conta:
+depositar(): Adiciona dinheiro à conta.
+sacar(): Retira dinheiro da conta.
+transferir(): Transfere dinheiro para outra conta.
+consultarSaldo(): Retorna o saldo atual da conta.
